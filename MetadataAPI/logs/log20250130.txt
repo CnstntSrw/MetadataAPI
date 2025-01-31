@@ -1,0 +1,1344 @@
+2025-01-30 19:16:06.267 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 19:16:06.306 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 19:16:06.308 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 19:16:06.309 +00:00 [INF] Hosting environment: Development
+2025-01-30 19:16:06.309 +00:00 [INF] Content root path: /app
+2025-01-30 19:16:06.533 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger - null null
+2025-01-30 19:16:06.556 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger - 301 0 null 23.8851ms
+2025-01-30 19:16:06.571 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/index.html - null null
+2025-01-30 19:16:06.630 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/index.html - 200 null text/html;charset=utf-8 59.2119ms
+2025-01-30 19:16:06.671 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/index.css - null null
+2025-01-30 19:16:06.671 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/swagger-ui.css - null null
+2025-01-30 19:16:06.671 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/index.js - null null
+2025-01-30 19:16:06.671 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/swagger-ui-bundle.js - null null
+2025-01-30 19:16:06.671 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/swagger-ui-standalone-preset.js - null null
+2025-01-30 19:16:06.678 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/index.js - 200 null application/javascript;charset=utf-8 7.2006ms
+2025-01-30 19:16:06.682 +00:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-01-30 19:16:06.682 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/index.css - 200 202 text/css 11.6319ms
+2025-01-30 19:16:06.693 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-01-30 19:16:06.695 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/swagger-ui.css - 200 152035 text/css 24.0129ms
+2025-01-30 19:16:06.715 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-01-30 19:16:06.716 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/swagger-ui-standalone-preset.js - 200 230007 text/javascript 44.9624ms
+2025-01-30 19:16:06.775 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-01-30 19:16:06.776 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/swagger-ui-bundle.js - 200 1426050 text/javascript 104.9106ms
+2025-01-30 19:16:06.921 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/v1/swagger.json - null null
+2025-01-30 19:16:06.964 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/favicon-32x32.png - null null
+2025-01-30 19:16:06.965 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-01-30 19:16:06.965 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/favicon-32x32.png - 200 628 image/png 1.3315ms
+2025-01-30 19:16:06.965 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 19:16:06.984 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 62.8144ms
+2025-01-30 19:16:44.338 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 19:16:44.368 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 19:16:44.370 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 19:16:44.371 +00:00 [INF] Hosting environment: Development
+2025-01-30 19:16:44.371 +00:00 [INF] Content root path: /app
+2025-01-30 19:16:44.537 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/index.html - null null
+2025-01-30 19:16:44.605 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/index.html - 200 null text/html;charset=utf-8 68.2816ms
+2025-01-30 19:16:44.644 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/index.js - null null
+2025-01-30 19:16:44.650 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/index.js - 200 null application/javascript;charset=utf-8 6.4556ms
+2025-01-30 19:16:44.881 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32785/swagger/v1/swagger.json - null null
+2025-01-30 19:16:44.937 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 19:16:44.948 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32785/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 67.0851ms
+2025-01-30 19:19:24.733 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 19:19:24.769 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 19:19:24.772 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 19:19:24.773 +00:00 [INF] Hosting environment: Development
+2025-01-30 19:19:24.774 +00:00 [INF] Content root path: /app
+2025-01-30 19:19:24.952 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger - null null
+2025-01-30 19:19:24.973 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger - 301 0 null 20.7397ms
+2025-01-30 19:19:24.987 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.html - null null
+2025-01-30 19:19:25.035 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.html - 200 null text/html;charset=utf-8 47.9697ms
+2025-01-30 19:19:25.067 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/swagger-ui.css - null null
+2025-01-30 19:19:25.068 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.js - null null
+2025-01-30 19:19:25.068 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/swagger-ui-bundle.js - null null
+2025-01-30 19:19:25.068 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.css - null null
+2025-01-30 19:19:25.069 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/swagger-ui-standalone-preset.js - null null
+2025-01-30 19:19:25.073 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.js - 200 null application/javascript;charset=utf-8 4.7473ms
+2025-01-30 19:19:25.078 +00:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-01-30 19:19:25.079 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.css - 200 202 text/css 10.6163ms
+2025-01-30 19:19:25.087 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-01-30 19:19:25.089 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/swagger-ui.css - 200 152035 text/css 21.436ms
+2025-01-30 19:19:25.096 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-01-30 19:19:25.096 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/swagger-ui-standalone-preset.js - 200 230007 text/javascript 27.5083ms
+2025-01-30 19:19:25.124 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-01-30 19:19:25.124 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/swagger-ui-bundle.js - 200 1426050 text/javascript 55.9594ms
+2025-01-30 19:19:25.315 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - null null
+2025-01-30 19:19:25.361 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 19:19:25.379 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 63.0943ms
+2025-01-30 19:27:11.059 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 19:27:11.088 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 19:27:11.091 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 19:27:11.092 +00:00 [INF] Hosting environment: Development
+2025-01-30 19:27:11.092 +00:00 [INF] Content root path: /app
+2025-01-30 19:27:11.388 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.html - null null
+2025-01-30 19:27:11.455 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.html - 200 null text/html;charset=utf-8 68.1482ms
+2025-01-30 19:27:11.491 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.js - null null
+2025-01-30 19:27:11.498 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.js - 200 null application/javascript;charset=utf-8 6.6352ms
+2025-01-30 19:27:11.711 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - null null
+2025-01-30 19:27:11.755 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 19:27:11.765 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 53.8974ms
+2025-01-30 19:29:41.273 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 19:29:41.298 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 19:29:41.300 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 19:29:41.301 +00:00 [INF] Hosting environment: Development
+2025-01-30 19:29:41.301 +00:00 [INF] Content root path: /app
+2025-01-30 19:29:41.473 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.html - null null
+2025-01-30 19:29:41.540 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.html - 200 null text/html;charset=utf-8 66.9564ms
+2025-01-30 19:29:41.575 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.js - null null
+2025-01-30 19:29:41.584 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.js - 200 null application/javascript;charset=utf-8 8.6443ms
+2025-01-30 19:29:41.745 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - null null
+2025-01-30 19:29:41.802 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.019ms
+2025-01-30 19:29:57.145 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32769/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundarywleAyZnl5vXN0vt4 343
+2025-01-30 19:29:57.150 +00:00 [INF] Executing endpoint 'MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 19:29:57.165 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 19:29:58.508 +00:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Date), @p3='?', @p4='?' (DbType = Int32), @p5='?' (DbType = Date), @p6='?', @p7='?', @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("Id", "CreatedAt", "EndDate", "JsonData", "Participants", "StartDate", "Status", "Title", "TrialId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-01-30 19:29:58.522 +00:00 [INF] Clinical trial metadata uploaded successfully: adipisicing nisi Lorem
+2025-01-30 19:29:58.526 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 19:29:58.530 +00:00 [INF] Executed action MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 1362.1941ms
+2025-01-30 19:29:58.531 +00:00 [INF] Executed endpoint 'MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 19:29:58.536 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32769/api/ClinicalTrial/upload - 200 null text/plain; charset=utf-8 1391.0285ms
+2025-01-30 19:30:06.528 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32769/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryX2l5sPwkg3KgCBrG 339
+2025-01-30 19:30:06.529 +00:00 [INF] Executing endpoint 'MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 19:30:06.530 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 19:30:06.575 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 19:30:06.576 +00:00 [INF] Executed action MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 45.516ms
+2025-01-30 19:30:06.577 +00:00 [INF] Executed endpoint 'MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 19:30:06.578 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32769/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 49.6355ms
+2025-01-30 19:30:25.773 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32769/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundary7j25HvumRCwB13Qr 144
+2025-01-30 19:30:25.774 +00:00 [INF] Executing endpoint 'MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 19:30:25.775 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 19:30:25.782 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-01-30 19:30:25.815 +00:00 [INF] Executed action MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 39.1205ms
+2025-01-30 19:30:25.815 +00:00 [INF] Executed endpoint 'MetadataAPI.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 19:30:25.816 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32769/api/ClinicalTrial/upload - 400 null application/problem+json; charset=utf-8 42.9076ms
+2025-01-30 19:46:02.944 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 19:46:02.974 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 19:46:02.976 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 19:46:02.977 +00:00 [INF] Hosting environment: Development
+2025-01-30 19:46:02.977 +00:00 [INF] Content root path: /app
+2025-01-30 19:46:03.129 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.html - null null
+2025-01-30 19:46:03.196 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.html - 200 null text/html;charset=utf-8 67.5221ms
+2025-01-30 19:46:03.231 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.js - null null
+2025-01-30 19:46:03.237 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.js - 200 null application/javascript;charset=utf-8 6.3408ms
+2025-01-30 19:46:03.403 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - null null
+2025-01-30 19:46:03.463 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.5097ms
+2025-01-30 19:46:38.055 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/adipisicing nisi Lorem - null null
+2025-01-30 19:46:38.060 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 19:46:38.075 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 19:46:38.461 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 383.1517ms
+2025-01-30 19:46:38.462 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 19:46:38.465 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 19:46:38.492 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/adipisicing nisi Lorem - 500 null text/plain; charset=utf-8 436.7436ms
+2025-01-30 20:01:12.528 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - null null
+2025-01-30 20:01:12.529 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:01:12.530 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:01:12.541 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 9.9004ms
+2025-01-30 20:01:12.541 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:01:12.542 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:01:12.545 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - 500 null text/plain; charset=utf-8 17.1315ms
+2025-01-30 20:01:24.578 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - null null
+2025-01-30 20:01:24.578 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:01:24.579 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:01:24.619 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 39.9207ms
+2025-01-30 20:01:24.620 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:01:24.621 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:01:24.625 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - 500 null text/plain; charset=utf-8 47.1827ms
+2025-01-30 20:02:04.455 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - null null
+2025-01-30 20:02:04.457 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:02:04.458 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:02:04.460 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 1.1528ms
+2025-01-30 20:02:04.462 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:02:04.462 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:02:04.465 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - 500 null text/plain; charset=utf-8 9.1883ms
+2025-01-30 20:02:38.983 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial?status=Ongoing - null null
+2025-01-30 20:02:38.984 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 20:02:38.988 +00:00 [INF] Route matched with {action = "GetTrials", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTrials(System.String, System.Nullable`1[System.DateOnly], System.Nullable`1[System.DateOnly]) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:02:39.356 +00:00 [INF] Executed DbCommand (28ms) [Parameters=[@__request_Status_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."Status" = @__request_Status_0
+2025-01-30 20:02:39.409 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MetadataAPI.Domain.Entities.ClinicalTrialMetadata, MetadataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 20:02:39.437 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI) in 447.0116ms
+2025-01-30 20:02:39.438 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 20:02:39.441 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial?status=Ongoing - 200 null application/json; charset=utf-8 458.6057ms
+2025-01-30 20:03:01.970 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial?startDate=1893-07-05 - null null
+2025-01-30 20:03:01.971 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 20:03:01.972 +00:00 [INF] Route matched with {action = "GetTrials", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTrials(System.String, System.Nullable`1[System.DateOnly], System.Nullable`1[System.DateOnly]) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:03:01.993 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request_StartDate_Value_0='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."StartDate" >= @__request_StartDate_Value_0
+2025-01-30 20:03:01.994 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MetadataAPI.Domain.Entities.ClinicalTrialMetadata, MetadataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 20:03:01.995 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI) in 22.2923ms
+2025-01-30 20:03:01.995 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 20:03:01.996 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial?startDate=1893-07-05 - 200 null application/json; charset=utf-8 25.5171ms
+2025-01-30 20:03:14.931 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial?startDate=1893-07-05&endDate=1906-02-27 - null null
+2025-01-30 20:03:14.933 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 20:03:14.934 +00:00 [INF] Route matched with {action = "GetTrials", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTrials(System.String, System.Nullable`1[System.DateOnly], System.Nullable`1[System.DateOnly]) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:03:14.946 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_StartDate_Value_0='?' (DbType = Date), @__request_EndDate_Value_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."StartDate" >= @__request_StartDate_Value_0 AND c."EndDate" <= @__request_EndDate_Value_1
+2025-01-30 20:03:14.947 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MetadataAPI.Domain.Entities.ClinicalTrialMetadata, MetadataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 20:03:14.948 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI) in 13.0043ms
+2025-01-30 20:03:14.950 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 20:03:14.951 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial?startDate=1893-07-05&endDate=1906-02-27 - 200 null application/json; charset=utf-8 19.3305ms
+2025-01-30 20:04:28.220 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/fb363716-f0c2-4068-bb59-ba366b26bddf - null null
+2025-01-30 20:04:28.221 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:04:28.222 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:04:28.224 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 2.1065ms
+2025-01-30 20:04:28.225 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:04:28.225 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:04:28.228 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/fb363716-f0c2-4068-bb59-ba366b26bddf - 500 null text/plain; charset=utf-8 7.0345ms
+2025-01-30 20:08:12.817 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 20:08:12.844 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 20:08:12.848 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 20:08:12.848 +00:00 [INF] Hosting environment: Development
+2025-01-30 20:08:12.849 +00:00 [INF] Content root path: /app
+2025-01-30 20:08:13.000 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.html - null null
+2025-01-30 20:08:13.072 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.html - 200 null text/html;charset=utf-8 71.791ms
+2025-01-30 20:08:13.112 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.js - null null
+2025-01-30 20:08:13.119 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.js - 200 null application/javascript;charset=utf-8 7.1848ms
+2025-01-30 20:08:13.283 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - null null
+2025-01-30 20:08:13.344 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.5315ms
+2025-01-30 20:08:27.240 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - null null
+2025-01-30 20:08:27.245 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:08:27.260 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:08:28.063 +00:00 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."Id" = @__p_0
+LIMIT 1
+2025-01-30 20:08:28.116 +00:00 [INF] Executing OkObjectResult, writing value of type 'MetadataAPI.Domain.Entities.ClinicalTrialMetadata'.
+2025-01-30 20:08:28.144 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 882.2154ms
+2025-01-30 20:08:28.145 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:08:28.150 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - 200 null application/json; charset=utf-8 910.3624ms
+2025-01-30 20:08:35.865 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/asd - null null
+2025-01-30 20:08:35.866 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:08:35.867 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:08:35.872 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 4.2201ms
+2025-01-30 20:08:35.872 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:08:35.874 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailure failureKind)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.Parse(ReadOnlySpan`1 input)
+   at System.Guid.Parse(String input)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String id) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:08:35.894 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/asd - 500 null text/plain; charset=utf-8 28.6291ms
+2025-01-30 20:09:14.423 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - null null
+2025-01-30 20:09:14.424 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:09:14.424 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:09:14.443 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."Id" = @__p_0
+LIMIT 1
+2025-01-30 20:09:14.444 +00:00 [INF] Executing OkObjectResult, writing value of type 'MetadataAPI.Domain.Entities.ClinicalTrialMetadata'.
+2025-01-30 20:09:14.446 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 20.9502ms
+2025-01-30 20:09:14.447 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:09:14.448 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - 200 null application/json; charset=utf-8 25.1542ms
+2025-01-30 20:09:27.807 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/fb363716-f0c2-4068-bb59-ba366b26bddf - null null
+2025-01-30 20:09:27.808 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:09:27.809 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:09:27.858 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."Id" = @__p_0
+LIMIT 1
+2025-01-30 20:09:27.860 +00:00 [INF] Executing OkObjectResult, writing value of type 'MetadataAPI.Domain.Entities.ClinicalTrialMetadata'.
+2025-01-30 20:09:27.861 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 50.3366ms
+2025-01-30 20:09:27.862 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:09:27.863 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/fb363716-f0c2-4068-bb59-ba366b26bddf - 200 null application/json; charset=utf-8 55.6376ms
+2025-01-30 20:09:37.759 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/api/ClinicalTrial/fb363716-f0c2-4068-bb59-ba366b26bddf - null null
+2025-01-30 20:09:37.760 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:09:37.761 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:09:37.765 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."Id" = @__p_0
+LIMIT 1
+2025-01-30 20:09:37.766 +00:00 [INF] Executing OkObjectResult, writing value of type 'MetadataAPI.Domain.Entities.ClinicalTrialMetadata'.
+2025-01-30 20:09:37.766 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 4.6698ms
+2025-01-30 20:09:37.767 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:09:37.767 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/api/ClinicalTrial/fb363716-f0c2-4068-bb59-ba366b26bddf - 200 null application/json; charset=utf-8 8.3368ms
+2025-01-30 20:47:45.098 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 20:47:45.128 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 20:47:45.130 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 20:47:45.130 +00:00 [INF] Hosting environment: Development
+2025-01-30 20:47:45.131 +00:00 [INF] Content root path: /app
+2025-01-30 20:47:45.293 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger - null null
+2025-01-30 20:47:45.313 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger - 301 0 null 21.4865ms
+2025-01-30 20:47:45.328 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 20:47:45.377 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 49.5565ms
+2025-01-30 20:47:45.411 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/swagger-ui.css - null null
+2025-01-30 20:47:45.411 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.css - null null
+2025-01-30 20:47:45.411 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/swagger-ui-bundle.js - null null
+2025-01-30 20:47:45.412 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/swagger-ui-standalone-preset.js - null null
+2025-01-30 20:47:45.413 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 20:47:45.418 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 5.5466ms
+2025-01-30 20:47:45.421 +00:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-01-30 20:47:45.421 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.css - 200 202 text/css 10.0961ms
+2025-01-30 20:47:45.431 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-01-30 20:47:45.432 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/swagger-ui.css - 200 152035 text/css 20.7212ms
+2025-01-30 20:47:45.441 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-01-30 20:47:45.441 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/swagger-ui-standalone-preset.js - 200 230007 text/javascript 29.1176ms
+2025-01-30 20:47:45.470 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-01-30 20:47:45.470 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/swagger-ui-bundle.js - 200 1426050 text/javascript 58.9343ms
+2025-01-30 20:47:45.649 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 20:47:45.696 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/favicon-32x32.png - null null
+2025-01-30 20:47:45.697 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-01-30 20:47:45.698 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/favicon-32x32.png - 200 628 image/png 1.2401ms
+2025-01-30 20:47:45.710 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0879ms
+2025-01-30 20:48:06.170 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/a?trialId=asd - null null
+2025-01-30 20:48:06.177 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:48:06.200 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:48:06.605 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 401.7444ms
+2025-01-30 20:48:06.606 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:48:06.608 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:48:06.634 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/a?trialId=asd - 500 null text/plain; charset=utf-8 463.6966ms
+2025-01-30 20:48:32.828 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623?trialId=asd - null null
+2025-01-30 20:48:32.830 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:48:32.831 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:48:32.844 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 11.799ms
+2025-01-30 20:48:32.845 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:48:32.846 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:48:32.849 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623?trialId=asd - 500 null text/plain; charset=utf-8 21.3411ms
+2025-01-30 20:49:02.511 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 20:49:02.541 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 20:49:02.546 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 20:49:02.548 +00:00 [INF] Hosting environment: Development
+2025-01-30 20:49:02.549 +00:00 [INF] Content root path: /app
+2025-01-30 20:49:02.740 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 20:49:02.808 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 69.0651ms
+2025-01-30 20:49:02.847 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 20:49:02.853 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 6.8064ms
+2025-01-30 20:49:03.073 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 20:49:03.132 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.943ms
+2025-01-30 20:49:28.704 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - null null
+2025-01-30 20:49:28.710 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:49:28.728 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:49:29.134 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 402.6862ms
+2025-01-30 20:49:29.135 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:49:29.138 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<ClinicalTrialMetadata>.Find' was of type 'string', which does not match the property type of 'Guid'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:49:29.166 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - 500 null text/plain; charset=utf-8 462.6772ms
+2025-01-30 20:49:54.619 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 20:49:54.652 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 20:49:54.655 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 20:49:54.656 +00:00 [INF] Hosting environment: Development
+2025-01-30 20:49:54.656 +00:00 [INF] Content root path: /app
+2025-01-30 20:49:54.800 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 20:49:54.867 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 68.1931ms
+2025-01-30 20:49:54.906 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 20:49:54.913 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 7.1072ms
+2025-01-30 20:49:55.081 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 20:49:55.138 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.0476ms
+2025-01-30 20:50:03.916 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/"94e7e9ee-4ea1-4d20-9477-bbd5830e8623" - null null
+2025-01-30 20:50:03.924 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:50:03.942 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:50:04.068 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 123.0466ms
+2025-01-30 20:50:04.069 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:50:04.072 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.GuidResult.SetFailure(ParseFailure failureKind)
+   at System.Guid.TryParseExactN(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.Parse(ReadOnlySpan`1 input)
+   at System.Guid.Parse(String input)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 20:50:04.095 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/"94e7e9ee-4ea1-4d20-9477-bbd5830e8623" - 500 null text/plain; charset=utf-8 178.2567ms
+2025-01-30 20:50:09.195 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - null null
+2025-01-30 20:50:09.196 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:50:09.196 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 20:50:09.802 +00:00 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title", c."TrialId"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."Id" = @__p_0
+LIMIT 1
+2025-01-30 20:50:09.859 +00:00 [INF] Executing OkObjectResult, writing value of type 'MetadataAPI.Domain.Entities.ClinicalTrialMetadata'.
+2025-01-30 20:50:09.886 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 689.0565ms
+2025-01-30 20:50:09.887 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 20:50:09.891 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/94e7e9ee-4ea1-4d20-9477-bbd5830e8623 - 200 null application/json; charset=utf-8 696.8298ms
+2025-01-30 21:06:56.079 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 21:06:56.112 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 21:06:56.114 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:06:56.115 +00:00 [INF] Hosting environment: Development
+2025-01-30 21:06:56.116 +00:00 [INF] Content root path: /app
+2025-01-30 21:06:56.267 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 21:06:56.334 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 68.1582ms
+2025-01-30 21:06:56.379 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 21:06:56.385 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 6.1491ms
+2025-01-30 21:06:56.547 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 21:06:56.608 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.3696ms
+2025-01-30 21:07:12.840 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 21:07:12.868 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 21:07:12.870 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:07:12.871 +00:00 [INF] Hosting environment: Development
+2025-01-30 21:07:12.871 +00:00 [INF] Content root path: /app
+2025-01-30 21:07:13.051 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 21:07:13.120 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 69.6423ms
+2025-01-30 21:07:13.158 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 21:07:13.166 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 8.0538ms
+2025-01-30 21:07:13.328 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 21:07:13.388 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.6236ms
+2025-01-30 21:07:34.798 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryODADzesx1WRAykan 343
+2025-01-30 21:07:34.808 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:07:34.825 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:07:35.687 +00:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Date), @p3='?', @p4='?' (DbType = Int32), @p5='?' (DbType = Date), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "EndDate", "JsonData", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-01-30 21:07:35.701 +00:00 [INF] Clinical trial metadata uploaded successfully: adipisicing nisi Lorem
+2025-01-30 21:07:35.706 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 21:07:35.709 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 881.7949ms
+2025-01-30 21:07:35.711 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:07:35.717 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 200 null text/plain; charset=utf-8 919.7344ms
+2025-01-30 21:07:47.991 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundary9VxnXMkWpFWMZbua 343
+2025-01-30 21:07:47.992 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:07:47.993 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:07:48.090 +00:00 [ERR] Failed executing DbCommand (15ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Date), @p3='?', @p4='?' (DbType = Int32), @p5='?' (DbType = Date), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "EndDate", "JsonData", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-01-30 21:07:48.107 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'MetadataAPI.Infrastructure.Persistent.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-01-30 21:07:48.111 +00:00 [ERR] Error processing uploaded JSON file.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MetadataAPI.Infrastructure.Persistent.ApplicationDbContext.SaveChangesAsync(CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Infrastructure\Persistent\ApplicationDbContext.cs:line 18
+   at MetadataAPI.Application.Commands.UploadJSONMetadata.UploadJsonMetadataCommandHandler.Handle(UploadJsonMetadataCommand request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Commands\UploadJSONMetadata\UploadJsonMetadataCommandHandler.cs:line 47
+2025-01-30 21:07:48.130 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 21:07:48.131 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 136.9999ms
+2025-01-30 21:07:48.131 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:07:48.132 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 141.2314ms
+2025-01-30 21:08:10.637 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/adipisicing nisi Lorem - null null
+2025-01-30 21:08:10.638 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 21:08:10.643 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:08:10.648 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 4.3486ms
+2025-01-30 21:08:10.650 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 21:08:10.653 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailure failureKind)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.Parse(ReadOnlySpan`1 input)
+   at System.Guid.Parse(String input)
+   at MetadataAPI.Application.Queries.GetClinicalTrialById.GetClinicalTrialByIdQueryHandler.Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Queries\GetClinicalTrialById\GetClinicalTrialByIdQueryHandler.cs:line 18
+   at MetadataAPI.API.Controllers.ClinicalTrialController.GetById(String trialId) in D:\Projects\MetadataAPISolution\MetadataAPI\API\Controllers\ClinicalTrialController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-30 21:08:10.658 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/adipisicing nisi Lorem - 500 null text/plain; charset=utf-8 20.5849ms
+2025-01-30 21:08:39.973 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 21:08:40.002 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 21:08:40.004 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:08:40.005 +00:00 [INF] Hosting environment: Development
+2025-01-30 21:08:40.006 +00:00 [INF] Content root path: /app
+2025-01-30 21:08:40.295 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 21:08:40.363 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 69.5386ms
+2025-01-30 21:08:40.401 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 21:08:40.409 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 8.2108ms
+2025-01-30 21:08:40.575 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 21:08:40.634 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.0978ms
+2025-01-30 21:08:48.057 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/adipisicing nisi Lorem - null null
+2025-01-30 21:08:48.078 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 21:08:48.094 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:08:48.847 +00:00 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT c."TrialId", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."TrialId" = @__p_0
+LIMIT 1
+2025-01-30 21:08:48.903 +00:00 [INF] Executing OkObjectResult, writing value of type 'MetadataAPI.Domain.Entities.ClinicalTrialMetadata'.
+2025-01-30 21:08:48.930 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 833.1055ms
+2025-01-30 21:08:48.931 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 21:08:48.937 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/adipisicing nisi Lorem - 200 null application/json; charset=utf-8 879.9304ms
+2025-01-30 21:08:54.057 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial/asd - null null
+2025-01-30 21:08:54.058 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 21:08:54.059 +00:00 [INF] Route matched with {action = "GetById", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:08:54.080 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT c."TrialId", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."TrialId" = @__p_0
+LIMIT 1
+2025-01-30 21:08:54.082 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-01-30 21:08:54.083 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI) in 23.0262ms
+2025-01-30 21:08:54.084 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetById (MetadataAPI)'
+2025-01-30 21:08:54.085 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial/asd - 404 null text/plain; charset=utf-8 28.0996ms
+2025-01-30 21:09:29.381 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryXkgYH463HpOWUxuQ 343
+2025-01-30 21:09:29.383 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:09:29.391 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:09:29.623 +00:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Date), @p3='?', @p4='?' (DbType = Int32), @p5='?' (DbType = Date), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "EndDate", "JsonData", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-01-30 21:09:29.638 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'MetadataAPI.Infrastructure.Persistent.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-01-30 21:09:29.641 +00:00 [ERR] Error processing uploaded JSON file.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MetadataAPI.Infrastructure.Persistent.ApplicationDbContext.SaveChangesAsync(CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Infrastructure\Persistent\ApplicationDbContext.cs:line 18
+   at MetadataAPI.Application.Commands.UploadJSONMetadata.UploadJsonMetadataCommandHandler.Handle(UploadJsonMetadataCommand request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Commands\UploadJSONMetadata\UploadJsonMetadataCommandHandler.cs:line 47
+2025-01-30 21:09:29.656 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 21:09:29.657 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 265.3442ms
+2025-01-30 21:09:29.657 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:09:29.658 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 276.541ms
+2025-01-30 21:17:10.607 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 21:17:10.637 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 21:17:10.641 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:17:10.642 +00:00 [INF] Hosting environment: Development
+2025-01-30 21:17:10.642 +00:00 [INF] Content root path: /app
+2025-01-30 21:17:10.795 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 21:17:10.867 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 72.9771ms
+2025-01-30 21:17:10.903 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 21:17:10.910 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 7.6908ms
+2025-01-30 21:17:11.074 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 21:17:11.132 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.4687ms
+2025-01-30 21:17:22.287 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryB9zui5FB09Z1hbkm 343
+2025-01-30 21:17:22.294 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:17:22.312 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:17:23.166 +00:00 [ERR] Failed executing DbCommand (35ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Date), @p3='?', @p4='?' (DbType = Int32), @p5='?' (DbType = Date), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "EndDate", "JsonData", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-01-30 21:17:23.186 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'MetadataAPI.Infrastructure.Persistent.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-01-30 21:17:23.193 +00:00 [ERR] Error saving clinical trial metadata due to duplicate TrialId.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_ClinicalTrialMetadata"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: ClinicalTrialMetadata
+    ConstraintName: PK_ClinicalTrialMetadata
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MetadataAPI.Infrastructure.Persistent.ApplicationDbContext.SaveChangesAsync(CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Infrastructure\Persistent\ApplicationDbContext.cs:line 18
+   at MetadataAPI.Application.Commands.UploadJSONMetadata.UploadJsonMetadataCommandHandler.Handle(UploadJsonMetadataCommand request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Commands\UploadJSONMetadata\UploadJsonMetadataCommandHandler.cs:line 50
+2025-01-30 21:17:23.216 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 21:17:23.220 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 904.908ms
+2025-01-30 21:17:23.221 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:17:23.228 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 941.3269ms
+2025-01-30 21:20:46.015 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial?startDate=1893-07-05 - null null
+2025-01-30 21:20:46.016 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 21:20:46.021 +00:00 [INF] Route matched with {action = "GetTrials", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTrials(System.String, System.Nullable`1[System.DateOnly], System.Nullable`1[System.DateOnly]) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:20:46.199 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[@__request_StartDate_Value_0='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."TrialId", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."StartDate" >= @__request_StartDate_Value_0
+2025-01-30 21:20:46.212 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MetadataAPI.Domain.Entities.ClinicalTrialMetadata, MetadataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 21:20:46.239 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI) in 217.7703ms
+2025-01-30 21:20:46.240 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 21:20:46.240 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial?startDate=1893-07-05 - 200 null application/json; charset=utf-8 225.7785ms
+2025-01-30 21:21:02.628 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial?startDate=1893-07-05&endDate=1906-02-27 - null null
+2025-01-30 21:21:02.629 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 21:21:02.630 +00:00 [INF] Route matched with {action = "GetTrials", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTrials(System.String, System.Nullable`1[System.DateOnly], System.Nullable`1[System.DateOnly]) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:21:02.649 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_StartDate_Value_0='?' (DbType = Date), @__request_EndDate_Value_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."TrialId", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."StartDate" >= @__request_StartDate_Value_0 AND c."EndDate" <= @__request_EndDate_Value_1
+2025-01-30 21:21:02.650 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MetadataAPI.Domain.Entities.ClinicalTrialMetadata, MetadataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 21:21:02.651 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI) in 20.2198ms
+2025-01-30 21:21:02.651 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 21:21:02.651 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial?startDate=1893-07-05&endDate=1906-02-27 - 200 null application/json; charset=utf-8 22.9722ms
+2025-01-30 21:21:23.262 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/api/ClinicalTrial?startDate=1906-02-27 - null null
+2025-01-30 21:21:23.263 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 21:21:23.264 +00:00 [INF] Route matched with {action = "GetTrials", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTrials(System.String, System.Nullable`1[System.DateOnly], System.Nullable`1[System.DateOnly]) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:21:23.271 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request_StartDate_Value_0='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."TrialId", c."CreatedAt", c."EndDate", c."JsonData", c."Participants", c."StartDate", c."Status", c."Title"
+FROM "ClinicalTrialMetadata" AS c
+WHERE c."StartDate" >= @__request_StartDate_Value_0
+2025-01-30 21:21:23.273 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MetadataAPI.Domain.Entities.ClinicalTrialMetadata, MetadataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-30 21:21:23.273 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI) in 9.1204ms
+2025-01-30 21:21:23.274 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.GetTrials (MetadataAPI)'
+2025-01-30 21:21:23.276 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/api/ClinicalTrial?startDate=1906-02-27 - 200 null application/json; charset=utf-8 13.2093ms
+2025-01-30 21:45:35.436 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 21:45:35.467 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 21:45:35.469 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:45:35.470 +00:00 [INF] Hosting environment: Development
+2025-01-30 21:45:35.470 +00:00 [INF] Content root path: /app
+2025-01-30 21:45:35.636 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 21:45:35.712 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 76.8225ms
+2025-01-30 21:45:35.753 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 21:45:35.761 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 8.4669ms
+2025-01-30 21:45:35.936 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 21:45:35.996 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.7048ms
+2025-01-30 21:49:58.325 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 21:49:58.365 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 21:49:58.368 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:49:58.370 +00:00 [INF] Hosting environment: Development
+2025-01-30 21:49:58.370 +00:00 [INF] Content root path: /app
+2025-01-30 21:49:58.530 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 21:49:58.601 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 71.4299ms
+2025-01-30 21:49:58.642 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 21:49:58.650 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 7.6215ms
+2025-01-30 21:49:58.814 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 21:49:58.873 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.2149ms
+2025-01-30 21:52:11.361 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 21:52:11.392 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 21:52:11.396 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:52:11.397 +00:00 [INF] Hosting environment: Development
+2025-01-30 21:52:11.397 +00:00 [INF] Content root path: /app
+2025-01-30 21:52:11.585 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 21:52:11.658 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 74.3294ms
+2025-01-30 21:52:11.699 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 21:52:11.708 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 9.4391ms
+2025-01-30 21:52:11.878 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 21:52:11.941 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.5853ms
+2025-01-30 21:52:35.108 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundarydXCF2DvzhVa0zn5V 357
+2025-01-30 21:52:35.119 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:52:35.135 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:52:35.396 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 21:52:35.399 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 261.4843ms
+2025-01-30 21:52:35.400 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:52:35.406 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 297.4726ms
+2025-01-30 21:52:47.087 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryvU3lFbL1G41IIUvi 332
+2025-01-30 21:52:47.088 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:52:47.089 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:52:47.720 +00:00 [INF] Executed DbCommand (40ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Date), @p4='?', @p5='?' (DbType = Int32), @p6='?' (DbType = Date), @p7='?', @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "DurationInDays", "EndDate", "JsonData", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-01-30 21:52:47.736 +00:00 [INF] Clinical trial metadata uploaded successfully: adipisicing nisi Lorem
+2025-01-30 21:52:47.738 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 21:52:47.739 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 649.0947ms
+2025-01-30 21:52:47.740 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:52:47.745 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 200 null text/plain; charset=utf-8 657.8488ms
+2025-01-30 21:54:06.836 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryOoAhfTgCoBvyphwc 373
+2025-01-30 21:54:06.837 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:54:06.838 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:54:06.889 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 21:54:06.889 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 50.7645ms
+2025-01-30 21:54:06.890 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:54:06.891 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 54.389ms
+2025-01-30 21:54:45.145 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryZek7hyFtYldETrpB 355
+2025-01-30 21:54:45.149 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:54:45.150 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 21:54:45.201 +00:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Date), @p4='?', @p5='?' (DbType = Int32), @p6='?' (DbType = Date), @p7='?', @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "DurationInDays", "EndDate", "JsonData", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-01-30 21:54:45.202 +00:00 [INF] Clinical trial metadata uploaded successfully: adipisicing nisi Lorem
+2025-01-30 21:54:45.202 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 21:54:45.203 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 50.5811ms
+2025-01-30 21:54:45.204 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 21:54:45.205 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 200 null text/plain; charset=utf-8 59.4919ms
+2025-01-30 22:16:25.240 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 22:16:25.274 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 22:16:25.276 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:16:25.278 +00:00 [INF] Hosting environment: Development
+2025-01-30 22:16:25.279 +00:00 [INF] Content root path: /app
+2025-01-30 22:16:25.434 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 22:16:25.504 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 70.1667ms
+2025-01-30 22:16:25.546 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 22:16:25.555 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 9.2811ms
+2025-01-30 22:16:25.714 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 22:16:25.778 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.5512ms
+2025-01-30 22:16:34.782 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 22:16:34.809 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 22:16:34.811 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:16:34.812 +00:00 [INF] Hosting environment: Development
+2025-01-30 22:16:34.813 +00:00 [INF] Content root path: /app
+2025-01-30 22:16:35.035 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 22:16:35.106 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 71.3861ms
+2025-01-30 22:16:35.138 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 22:16:35.146 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 7.2515ms
+2025-01-30 22:16:35.313 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 22:16:35.369 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.5981ms
+2025-01-30 22:16:47.494 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryPDV2leju04Wwnili 361
+2025-01-30 22:16:47.498 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:16:47.515 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 22:16:48.325 +00:00 [INF] Executed DbCommand (35ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Date), @p4='?' (DbType = Int32), @p5='?' (DbType = Date), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "DurationInDays", "EndDate", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-01-30 22:16:48.339 +00:00 [INF] Clinical trial metadata uploaded successfully: adipisicing nisi Lorem
+2025-01-30 22:16:48.344 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 22:16:48.347 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 830.1685ms
+2025-01-30 22:16:48.348 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:16:48.354 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 200 null text/plain; charset=utf-8 860.4966ms
+2025-01-30 22:17:30.635 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryTqITvBFSeRLGc7lH 365
+2025-01-30 22:17:30.636 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:17:30.637 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 22:17:30.727 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Date), @p4='?' (DbType = Int32), @p5='?' (DbType = Date), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ClinicalTrialMetadata" ("TrialId", "CreatedAt", "DurationInDays", "EndDate", "Participants", "StartDate", "Status", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-01-30 22:17:30.728 +00:00 [INF] Clinical trial metadata uploaded successfully: adipisicing nisi Lorem
+2025-01-30 22:17:30.729 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-01-30 22:17:30.729 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 91.7255ms
+2025-01-30 22:17:30.730 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:17:30.731 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 200 null text/plain; charset=utf-8 95.4294ms
+2025-01-30 22:18:49.242 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryApZfslTIVaRAByih 384
+2025-01-30 22:18:49.243 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:18:49.243 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 22:18:49.250 +00:00 [ERR] Error processing uploaded JSON file.
+Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'status', line 7, position 2.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader, JsonLoadSettings options)
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json)
+   at MetadataAPI.Infrastructure.Services.JsonSchemaValidator.ValidateJsonAsync(String jsonData) in D:\Projects\MetadataAPISolution\MetadataAPI\Infrastructure\Services\JsonSchemaValidator.cs:line 15
+   at MetadataAPI.Application.Commands.UploadJSONMetadata.UploadJsonMetadataCommandHandler.Handle(UploadJsonMetadataCommand request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Commands\UploadJSONMetadata\UploadJsonMetadataCommandHandler.cs:line 45
+2025-01-30 22:18:49.268 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 22:18:49.269 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 25.0476ms
+2025-01-30 22:18:49.269 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:18:49.270 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 28.2173ms
+2025-01-30 22:33:15.989 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 22:33:16.019 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 22:33:16.022 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:33:16.023 +00:00 [INF] Hosting environment: Development
+2025-01-30 22:33:16.023 +00:00 [INF] Content root path: /app
+2025-01-30 22:33:16.251 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 22:33:16.325 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 74.7804ms
+2025-01-30 22:33:16.363 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 22:33:16.371 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 6.6755ms
+2025-01-30 22:33:16.537 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 22:33:16.598 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.3486ms
+2025-01-30 22:33:31.269 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundary3Uqyv8Mscu2nHor9 384
+2025-01-30 22:33:31.275 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:33:31.293 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 22:33:31.542 +00:00 [ERR] Error processing uploaded JSON file.
+Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'status', line 7, position 2.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader, JsonLoadSettings options)
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json)
+   at MetadataAPI.Infrastructure.Services.JsonSchemaValidator.ValidateJsonAsync(String jsonData) in D:\Projects\MetadataAPISolution\MetadataAPI\Infrastructure\Services\JsonSchemaValidator.cs:line 15
+   at MetadataAPI.Application.Commands.UploadJSONMetadata.UploadJsonMetadataCommandHandler.Handle(UploadJsonMetadataCommand request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Commands\UploadJSONMetadata\UploadJsonMetadataCommandHandler.cs:line 46
+2025-01-30 22:33:31.564 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 22:33:31.568 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 271.6737ms
+2025-01-30 22:33:31.569 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:33:31.571 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 302.527ms
+2025-01-30 22:34:08.418 +00:00 [INF] Now listening on: http://[::]:8080
+2025-01-30 22:34:08.448 +00:00 [INF] Now listening on: https://[::]:8081
+2025-01-30 22:34:08.452 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:34:08.452 +00:00 [INF] Hosting environment: Development
+2025-01-30 22:34:08.453 +00:00 [INF] Content root path: /app
+2025-01-30 22:34:08.643 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 22:34:08.713 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 70.9852ms
+2025-01-30 22:34:08.750 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 22:34:08.757 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 7.0101ms
+2025-01-30 22:34:08.919 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 22:34:08.983 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.7418ms
+2025-01-30 22:34:22.635 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryJZNDB1RnbPRvf6gG 384
+2025-01-30 22:34:22.643 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:34:22.659 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 22:34:22.906 +00:00 [ERR] Error processing uploaded JSON file.
+Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'status', line 7, position 2.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader, JsonLoadSettings options)
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json)
+   at MetadataAPI.Infrastructure.Services.JsonSchemaValidator.ValidateJsonAsync(String jsonData) in D:\Projects\MetadataAPISolution\MetadataAPI\Infrastructure\Services\JsonSchemaValidator.cs:line 15
+   at MetadataAPI.Application.Commands.UploadJSONMetadata.UploadJsonMetadataCommandHandler.Handle(UploadJsonMetadataCommand request, CancellationToken cancellationToken) in D:\Projects\MetadataAPISolution\MetadataAPI\Application\Commands\UploadJSONMetadata\UploadJsonMetadataCommandHandler.cs:line 46
+2025-01-30 22:34:22.927 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 22:34:22.931 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 268.2759ms
+2025-01-30 22:34:22.931 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:34:22.933 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 297.7112ms
+2025-01-30 22:35:56.841 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundaryv3rGtDurB6RVqRdd 385
+2025-01-30 22:35:56.842 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:35:56.843 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 22:35:56.896 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 22:35:56.898 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 54.3153ms
+2025-01-30 22:35:56.899 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:35:56.902 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 61.0104ms
+2025-01-30 22:37:02.130 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.html - null null
+2025-01-30 22:37:02.132 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.html - 200 null text/html;charset=utf-8 1.8266ms
+2025-01-30 22:37:02.182 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/index.js - null null
+2025-01-30 22:37:02.183 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/index.js - 200 null application/javascript;charset=utf-8 0.9128ms
+2025-01-30 22:37:02.325 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - null null
+2025-01-30 22:37:02.327 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32771/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.5149ms
+2025-01-30 22:37:16.556 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - multipart/form-data; boundary=----WebKitFormBoundarywozYE5cAfp3Rsill 383
+2025-01-30 22:37:16.557 +00:00 [INF] Executing endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:37:16.558 +00:00 [INF] Route matched with {action = "UploadJsonMetadata", controller = "ClinicalTrial"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadJsonMetadata(Microsoft.AspNetCore.Http.IFormFile) on controller MetadataAPI.API.Controllers.ClinicalTrialController (MetadataAPI).
+2025-01-30 22:37:16.605 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-01-30 22:37:16.606 +00:00 [INF] Executed action MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI) in 47.2258ms
+2025-01-30 22:37:16.606 +00:00 [INF] Executed endpoint 'MetadataAPI.API.Controllers.ClinicalTrialController.UploadJsonMetadata (MetadataAPI)'
+2025-01-30 22:37:16.607 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32771/api/ClinicalTrial/upload - 400 null text/plain; charset=utf-8 50.7718ms
