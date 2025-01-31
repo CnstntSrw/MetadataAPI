@@ -51,17 +51,7 @@ namespace MetadataAPI.Application.Commands.UploadJSONMetadata
 
                 JsonConvert.DeserializeObject<ClinicalTrialMetadata>(jsonContent);
 
-                // Business Rule: Default endDate
-                if (clinicalTrial.Status == "Ongoing" && clinicalTrial.EndDate == null)
-                {
-                    clinicalTrial.EndDate = clinicalTrial.StartDate.AddMonths(1);
-                }
-
-                // Business Rule: Calculate Duration
-                clinicalTrial.DurationInDays = clinicalTrial.EndDate.HasValue
-                    ? (clinicalTrial.EndDate.Value.ToDateTime(TimeOnly.MinValue) -
-                       clinicalTrial.StartDate.ToDateTime(TimeOnly.MinValue)).Days
-                    : (DateTime.Now.Date - clinicalTrial.StartDate.ToDateTime(TimeOnly.MinValue)).Days;
+                ApplyBusinessRules(clinicalTrial);
 
                 // Save to database
                 await _dbContext.ClinicalTrialMetadata.AddAsync(clinicalTrial, cancellationToken);
@@ -88,5 +78,19 @@ namespace MetadataAPI.Application.Commands.UploadJSONMetadata
             }
         }
 
+        private static void ApplyBusinessRules(ClinicalTrialMetadata? clinicalTrial)
+        {
+            // Business Rule: Default endDate
+            if (clinicalTrial.Status == "Ongoing" && clinicalTrial.EndDate == null)
+            {
+                clinicalTrial.EndDate = clinicalTrial.StartDate.AddMonths(1);
+            }
+
+            // Business Rule: Calculate Duration
+            clinicalTrial.DurationInDays = clinicalTrial.EndDate.HasValue
+                ? (clinicalTrial.EndDate.Value.ToDateTime(TimeOnly.MinValue) -
+                   clinicalTrial.StartDate.ToDateTime(TimeOnly.MinValue)).Days
+                : (DateTime.Now.Date - clinicalTrial.StartDate.ToDateTime(TimeOnly.MinValue)).Days;
+        }
     }
 }

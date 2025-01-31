@@ -12,15 +12,15 @@ namespace MetadataAPI.API.Controllers
     [ApiController]
     public class ClinicalTrialController : ControllerBase
     {
-        private readonly IJsonSchemaValidator _jsonSchemaValidator;
-        private readonly ApplicationDbContext _dbContext;
-        private readonly ILogger<ClinicalTrialController> _logger;
+        //private readonly IJsonSchemaValidator _jsonSchemaValidator;
+        //private readonly ApplicationDbContext _dbContext;
+        //private readonly ILogger<ClinicalTrialController> _logger;
         private readonly IMediator _mediator;
         public ClinicalTrialController(IMediator mediator, IJsonSchemaValidator jsonSchemaValidator, ApplicationDbContext dbContext, ILogger<ClinicalTrialController> logger)
         {
-            _jsonSchemaValidator = jsonSchemaValidator;
-            _dbContext = dbContext;
-            _logger = logger;
+            //_jsonSchemaValidator = jsonSchemaValidator;
+            //_dbContext = dbContext;
+            //_logger = logger;
             _mediator = mediator;
         }
         [HttpGet("{trialId}")]

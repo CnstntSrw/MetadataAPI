@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using MetadataAPI.Application.Interfaces;
 using MetadataAPI.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace MetadataAPI.Application.Queries.GetClinicalTrialById
 {
@@ -16,7 +17,7 @@ namespace MetadataAPI.Application.Queries.GetClinicalTrialById
         public async Task<ClinicalTrialMetadata?> Handle(GetClinicalTrialByIdQuery request, CancellationToken cancellationToken)
         {
             return await _dbContext.ClinicalTrialMetadata
-                .FindAsync(new object[] { request.TrialId }, cancellationToken);
+                .FirstOrDefaultAsync(t => t.TrialId == request.TrialId, cancellationToken);
         }
     }
 }

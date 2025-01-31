@@ -13,7 +13,7 @@ namespace MetadataAPI.Infrastructure.Persistent
                 .Build();
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+            optionsBuilder.UseNpgsql(configuration.GetConnectionString("LocalConnection"));
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
