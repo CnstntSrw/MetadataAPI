@@ -2,8 +2,6 @@
 using MetadataAPI.Application.Commands.UploadJSONMetadata;
 using MetadataAPI.Application.Queries.GetClinicalTrialById;
 using MetadataAPI.Application.Queries.GetClinicalTrials;
-using MetadataAPI.Infrastructure.Interfaces;
-using MetadataAPI.Infrastructure.Persistent;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MetadataAPI.API.Controllers
@@ -12,17 +10,16 @@ namespace MetadataAPI.API.Controllers
     [ApiController]
     public class ClinicalTrialController : ControllerBase
     {
-        //private readonly IJsonSchemaValidator _jsonSchemaValidator;
-        //private readonly ApplicationDbContext _dbContext;
-        //private readonly ILogger<ClinicalTrialController> _logger;
         private readonly IMediator _mediator;
-        public ClinicalTrialController(IMediator mediator, IJsonSchemaValidator jsonSchemaValidator, ApplicationDbContext dbContext, ILogger<ClinicalTrialController> logger)
+        public ClinicalTrialController(IMediator mediator)
         {
-            //_jsonSchemaValidator = jsonSchemaValidator;
-            //_dbContext = dbContext;
-            //_logger = logger;
             _mediator = mediator;
         }
+        /// <summary>
+        /// Retrieves a clinical trial record by trialId
+        /// </summary>
+        /// <param name="trialId">The unique identifier of the clinical trial.</param>
+        /// <returns>The clinical trial details.</returns>
         [HttpGet("{trialId}")]
         public async Task<IActionResult> GetById(string trialId)
         {
@@ -31,7 +28,13 @@ namespace MetadataAPI.API.Controllers
 
             return Ok(result);
         }
-
+        /// <summary>
+        /// Retrieves clinical trials with applied filter
+        /// </summary>
+        /// <param name="status">Clinical trial status</param>
+        /// <param name="startDate">Clinical trial start date</param>
+        /// <param name="endDate">Clinical trial end date</param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetTrials([FromQuery] string? status, [FromQuery] DateOnly? startDate, [FromQuery] DateOnly? endDate)
         {
@@ -39,6 +42,14 @@ namespace MetadataAPI.API.Controllers
             var result = await _mediator.Send(query);
             return Ok(result);
         }
+        /// <summary>
+        /// Upload the clinical trial metadata.
+        /// Constraints:
+        /// - must be .json file
+        /// - size of the file must be lower than 10 Mb
+        /// </summary>
+        /// <param name="file">JSON file</param>
+        /// <returns></returns>
         [HttpPost("upload")]
         public async Task<IActionResult> UploadJsonMetadata(IFormFile file)
         {
